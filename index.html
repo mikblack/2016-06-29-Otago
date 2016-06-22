@@ -10,8 +10,8 @@ humandate: "Jun 29 - Jul 1, 2016"    # human-readable date (e.g., "Feb 17-18, 20
 humantime: "9:00am - 2:30pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
 startdate: 20160629      # use YYYY-MM-DD format like 2015-01-01
 enddate: 20160701        # use YYYY-MM-DD format like 2015-01-02
-instructor: ["Mik Black", "Murray Cadzow", "Tom Kelly"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Riku Takei", "Anthony Shaw", "Tanya Flynn"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Mik Black", "Murray Cadzow", "Tom Kelly", "Tanya Flynn"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Riku Takei", "Anthony Shaw", "Nick Burns"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: "mik.black@otago.ac.nz"      # contact email address for workshop organizer, such as "grace@hopper.org"
 etherpad: https://public.etherpad-mozilla.org/p/2016-06-29-otago        # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
@@ -49,12 +49,6 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 </iframe>
 {% endif %}
 
-<h4>This is the workshop template.  Use it to create your own website.
-Delete this line and email the link to your workshop page to admin@software-carpentry.org.
-If this is a self organized workshop, please be sure to include any other details
-Software Carpentry staff may need to know in your email.</h4>
-
-
 <h2 id="general">General Information</h2>
 
 <!--
@@ -63,6 +57,12 @@ Software Carpentry staff may need to know in your email.</h4>
   Edit the general explanatory paragraph below if you want to change
   the pitch.
 -->
+<p>
+  The <a href="https://www.nesi.org.nz/"> New Zealand eScience Infrastructure (NeSI)</a>
+  is pleased to announce its collaboration with the <a href="http://www.otago.ac.nz/">University of Otago</a>,
+  and Software Carpentry in offering an Otago Region Workshop designed to support researcher computing capability 
+  development.
+</p>
 <p>
   <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
   is to help scientists and engineers get more research done in less
@@ -191,29 +191,39 @@ Software Carpentry staff may need to know in your email.</h4>
 <p><a href='{{ site.swc_post_survey }}{{ site.github.project_title }}'>Post-workshop Survey</a></p>
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>09:00</td> <td>Introduction to the Unix shell</td> </tr>
+      <tr> <td>10:30</td> <td>Morning tea</td> </tr>
+      <tr> <td>11:00</td> <td>Unix shell (continued)</td> </tr>      
+      <tr> <td>12:30</td> <td>Lunch break</td> </tr>
+      <tr> <td>13:00</td> <td>Introduction to version control with Git</td> </tr>
     </table>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>09:00</td> <td>Programming in R</td> </tr>
+      <tr> <td>10:30</td> <td>Morning tea</td> </tr>
+      <tr> <td>11:00</td> <td>Programming in R</td> </tr>
+      <tr> <td>12:30</td> <td>Lunch break</td> </tr>
+      <tr> <td>13:00</td> <td>Programming in R</td> </tr>
+    </table>
+  </div>
+    <div class="col-md-4">
+    <h3>Day 3</h3>
+    <table class="table table-striped">
+      <tr> <td>09:00</td> <td>Automating tasks with the Unix shell</td> </tr>
+      <tr> <td>10:30</td> <td>Morning tea</td> </tr>
+      <tr> <td>11:00</td> <td>Version control with Git</td> </tr>
+      <tr> <td>12:30</td> <td>Lunch break</td> </tr>
+      <tr> <td>13:00</td> <td>Special interest topic (to be confirmed)</td> </tr>
     </table>
   </div>
 </div>
+
+
 
 <!--
   ETHERPAD
@@ -271,6 +281,7 @@ Software Carpentry staff may need to know in your email.</h4>
       <li><a href="{{site.swc_githubio}}/shell-novice/reference.html">Reference...</a></li>
     </ul>
   </div>
+  <!--
   <div class="col-md-6">
     <h3 id="syllabus-python">Programming in Python</h3>
     <ul>
@@ -284,7 +295,7 @@ Software Carpentry staff may need to know in your email.</h4>
       <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Reference...</a></li>
     </ul>
   </div>
-  <!--
+  -->
   <div class="col-md-6">
     <h3 id="syllabus-r">Programming in R</h3>
     <ul>
@@ -296,7 +307,6 @@ Software Carpentry staff may need to know in your email.</h4>
       <li><a href="{{site.swc_githubio}}/r-novice-inflammation/reference.html">Reference...</a></li>
     </ul>
   </div>
-  -->
   <!--
   <div class="col-md-6">
     <h3 id="syllabus-matlab">Programming in MATLAB</h3>
@@ -327,6 +337,7 @@ Software Carpentry staff may need to know in your email.</h4>
       <li><a href="{{site.swc_githubio}}/git-novice/reference.html">Reference...</a></li>
     </ul>
   </div>
+  <!--
   <div class="col-md-6">
     <h3 id="syllabus-sql">Managing Data with SQL</h3>
     <ul>
@@ -341,6 +352,7 @@ Software Carpentry staff may need to know in your email.</h4>
       <li><a href="{{site.swc_githubio}}/sql-novice-survey/reference.html">Reference...</a></li>
     </ul>
   </div>
+  -->
 </div>
 
 <hr/>
